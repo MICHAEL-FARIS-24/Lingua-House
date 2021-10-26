@@ -1,0 +1,108 @@
+
+*{box-sizing:border-box}
+
+
+body{background-color: black;}
+/* Srart Main Rus */
+
+.contianer{margin-right: auto; margin-left: auto;padding-left: 15px;padding-right: 15px;}
+/* End Main Rus */
+
+
+ /* small */
+ @media(min-width:768px){
+    .contianer {width: 750px;}
+    }
+        /* madium */
+    @media(min-width:992px){
+        .contianer {width: 970px;px;}
+        }
+            /* large */
+        @media(min-width:1200px){
+            .contianer {width: 1170px;}
+            }
+
+
+
+/* Start Header*/
+.header .navbar{background-color:rgb(56, 50, 50);color:#FFF;}
+
+.header .navbar img{width: 75px;transform: translate(0px, 10px); border-radius: 50%;}
+.header .navbar ul{list-style:none;display: grid;justify-items: center; }
+.header .navbar ul li{grid-row: none; margin-top: -53px;text-transform: uppercase;
+    font-family: arial;}
+
+.header .navbar ul li a{text-decoration: none;color: #1d9ad5;
+    font-size: large;
+    font-weight: bold;}
+
+    .header .navbar ul li .active {color: rgb(18, 116, 56);}
+    .header .navbar ul li :hover{color:#a9465d;}
+
+    
+    
+.header .slider  {height: 600px;margin-bottom:50px;}
+.header .slider .lang img{    height: 665px;width: 1170px;transform: translate(0px, -16px);}
+.header .slider .lang p{text-align: center;transform: translate(0px, -600px);
+    font-family: arial;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: yellow;line-height: 4px;}
+    /* End Header */
+
+    /* Start Animation */
+    .header .slider .lang p:nth-of-type(even){animation-name: mov; animation-duration: 2s;animation-iteration-count:infinite;
+        
+        animation-direction: alternate;}
+    @keyframes mov {
+        0%{transform: translate(200px,-600px);}
+      
+        100%{transform: translate(0px,-600px);}
+    }
+
+    .header .slider .lang p:nth-of-type(odd){animation-name: mov1; animation-duration: 2s;animation-iteration-count:infinite;
+        
+        animation-direction: alternate;}
+    @keyframes mov1 {
+        0%{transform: translate(-200px,-600px);}
+      
+        100%{transform: translate(0px,-600px);}
+    }
+
+    
+
+    /* End Animation  */
+
+
+
+    /* Start Portfolio */
+    .portfolio .file{display: grid;grid-template-columns: repeat(3,1fr);}
+    .portfolio .file img{transform: translate(95px, 0px);text-align: center;border-radius: 50%;width: 200px;height: 200px;}
+    .portfolio .file h2{letter-spacing: 2px;text-transform: uppercase;color:#6a4ca5;text-align: center;}
+    .portfolio .file p{    
+        color: #a9465d;
+        font-family: arial;letter-spacing: 1px;    text-transform: capitalize;
+
+        text-align: center;
+        font-weight: bold;line-height: 60px;}
+    /* End Portfolio */
+
+    /* Start contact */
+    .contact .icon {}
+    .contact .icon ul{    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    transform: translate(350px, 90px);
+    font-size: 30px;
+    text-align: center;
+}
+    .contact .icon ul li{color:#FFF;}
+    .contact .icon ul li:nth-of-type(1):hover{color:#1216eb}
+    .contact .icon ul li:nth-of-type(2):hover{color:#12eba3}
+    .contact .icon ul li:nth-of-type(3):hover{color:#eb1212}
+    .contact .icon ul li:nth-of-type(4):hover{color:#12aeeb}
+
+    .contact .number p{color: #efe80a;
+        transform: translate(919px, 200px);font-family: arial;}
+    /* End contact */
